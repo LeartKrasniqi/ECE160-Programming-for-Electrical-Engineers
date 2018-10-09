@@ -1,0 +1,9 @@
+The program (database.c) creates a structure containing two character arrays (one for last name and another for first name) as well as a float variable (salary) and an integer variable (year hired).  The structure is then initialized so the character arrays contain the null character and the two variables contain the value -1.  An array of these structures is created so that there can be room for 20 different people’s information.  A simple menu is created to prompt the user to either display records, modify records, save records, retrieve records, or exit.  A switch - case is used to take care of each of the possible scenarios:
+
+Display Records: The user is prompted for a record number and then the data from the appropriate structure is displayed on the screen.
+Modify Records:  The user is prompted for a record number and is then asked to input information into that structure.
+Save Records:  The program saves the records in binary format to a file called “company.db”  If there is a failure, a message pops up letting the user know something went wrong.
+Retrieve Records:  The program takes the information from the file “company.db” and is then readily available to display that information if the user presses Display Records when the menu pops up once again.
+Exit:  If the user selects this, the program is terminated.
+
+This program incorporates file pointers and reading/writing in binary format.  It also incorporates the use of a do while loop to ensure that the menu is displayed at least once and continues until the user selects Exit.  
